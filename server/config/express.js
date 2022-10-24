@@ -14,6 +14,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // routes
 app.use('/', require('../routes/home'));
 app.use('/users', require('../routes/users'));
+app.use('/categories', require('../routes/categories'));
+app.use('/products', require('../routes/products'));
 
 // errors handler
 app.use(errorHandler);
